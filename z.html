@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            border: none;
+        }
+        .container {
+            width: 100vw;
+            height: 100vh;
+            background-color:rgba(149, 149, 236, 0.322);
+            display: flex;
+            justify-content: space-evenly;
+            gap: 20px;
+            padding: 120px;
+            text-shadow: 20px 0px 80px black;
+
+        }
+
+        .page {
+            text-align: center;
+            /* background-color: blue; */
+            color: black;
+            padding: 10px;
+            width: 100%;
+            position: absolute; 
+            top: 0PX;             
+            left: 50%;          
+            transform: translateX(-50%); 
+            font-size: 24PX;    
+            /* flex-wrap: wrap; */
+            flex-direction: column;
+        }
+
+        .box,
+        .box3 {
+            width: 750px;
+            height: 320px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 10px;
+            box-shadow: 0 0 20px grey;
+            padding: 20px;
+        }
+
+        .box {
+            background-image: url(image2.jpg);
+        }
+
+        .box3 {
+            background-image: url(image1.jpg);
+        }
+
+        .heading{
+            color: black;
+            font-size: 45px;
+            text-shadow: 10px 0px 10px white;
+    
+        }
+        .heading1 {
+            color: white;
+            font-size: 45px;
+            text-shadow: 0px 0px 0px white;
+    
+        }
+
+        .subh{
+            color: black;
+            text-shadow: 0px 0px 10px white;
+        }
+        .subh1 {
+            color: white;
+            text-shadow: 3px 0px px white;
+        }
+
+        button {
+            background-color: rgba(0, 0, 0, 0.863);
+            color: white;
+            padding: 8px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        .image1 {
+            width: 100%;
+        }
+
+        @media (max-width: 1111px) {
+            .container {
+                flex-wrap: wrap; 
+            
+
+                
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <h1>Passport to paradise</h1>
+    </div>
+
+    <div class="container">
+        <div class="box">
+            <h1 class="heading">Santorini, Greece</h1>
+            <p class="subh">Explore the stunning white-washed<br>house and sunset views over the Aegean.</p>
+            <button>View More-></button>
+        </div>
+        <div class="box3">
+            <h1 class="heading1">New York City, USA</h1>
+            <p class="subh1">Experience the City that never sleeps,<br>full of iconic landmarks.</p>
+            <button>View More-></button>
+        </div>
+    </div>
+</body>
+</html>
